@@ -39,7 +39,7 @@ app.post("/signup", async (req, res) => {
 })
 
 app.post("/login", async (req, res) => {
-     
+
      const { email, password } = req.body;
      const user = await UserModel.findOne({ email })
      if (!user) {
@@ -47,17 +47,18 @@ app.post("/login", async (req, res) => {
      }
      const hash = user.password
      const userId = user._id
-     let jwtToken;
+
      try {
           jwt.sign({ userId: userId }, process.env.PRIVATE_KEY, function (err, token) {
-               jwtToken = token
-          });
-          bcrypt.compare(password, hash, function (err, result) {
-               if (result) {
-                    res.send({ msg: "Login Successfull", token: jwtToken })
-               } else {
-                    res.send({ msg: "Login Unsuccessfull" })
-               }
+          
+
+               bcrypt.compare(password, hash, function (err, result) {
+                    if (result) {
+                         res.send({ msg: "Login Successfull", token })
+                    } else {
+                         res.send({ msg: "Login Unsuccessfull" })
+                    }
+               });
           });
      } catch (error) {
           res.send({ msg: "something went wrong. plz try again" })
