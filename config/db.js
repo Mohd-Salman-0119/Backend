@@ -1,15 +1,16 @@
-const { mongoose } = require("../imports/modules.imports")
-require("dotenv").config();
+const { mongoose } = require("../imports/modules.imports");
 
-const connectionDB = async () => {
+
+const connectDB = async () => {
      try {
-          await mongoose.connect(`${process.env.MONGO_URI}/board`);
-          console.log("Connected Successfully: Mongo_DB")
+          const conn = await mongoose.connect(`${process.env.MONGO_URI}/nyka`)
+          console.log(`MongoDB connected successfully: ${conn.connection.host}`.underline.blue)
      } catch (error) {
-          console.log("Error, while connecting MONGO_DB")
+          console.log("Error: While conntecting Database".red)
+          console.log(error)
      }
 }
 
-module.exports = {
-     connectionDB
-}
+
+
+module.exports = { connectDB }

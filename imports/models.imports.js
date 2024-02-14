@@ -1,4 +1,7 @@
-const { UserModel } = require("../models/User.model")
-const { NoticeModel } = require("../models/Notice.model")
+const { UserModel } = require('../models/user.model');
+const { ProductModel } = require('../models/product.model');
 
-module.exports = { UserModel, NoticeModel }
+module.exports = {
+     UserModel,
+     ProductModel
+}

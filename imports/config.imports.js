@@ -1,4 +1,4 @@
-const { connectionDB } = require("../config/db")
+const { connectDB } = require('../config/db')
+const { generateToken } = require('../config/generateToken')
 
-
-module.exports = { connectionDB }
+module.exports = { connectDB, generateToken }
