@@ -1,5 +1,6 @@
 const { express, multer } = require('../imports/modules.imports');
-const { registerController, loginController } = require('../imports/controller.imports')
+const { authorize } = require('../imports/middleware.import')
+const { registerController, loginController, getUserByIdController } = require('../imports/controller.imports')
 
 const upload = multer({ dest: 'uploads/' });
 
@@ -8,6 +9,8 @@ const authRoutes = express.Router();
 
 authRoutes.route('/register').post(registerController)
 authRoutes.route('/login').post(loginController)
+
+authRoutes.route('/user').get(authorize, getUserByIdController)
 
 
 // Export the Auth Router

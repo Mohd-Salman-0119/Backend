@@ -1,5 +1,5 @@
-const { registerController, loginController } = require('../controller/auth.controller')
-const { getProductController, addProductController, getSingleProductController, editProductController, deleteProductController } = require('../controller/product.controller')
+const { registerController, loginController, getUserByIdController } = require('../controller/auth.controller')
+const { getProductController, addProductController, getSingleProductController, editProductController, deleteProductController, searchProducts, filterProducts } = require('../controller/product.controller')
 
 
 module.exports = {
@@ -9,5 +9,8 @@ module.exports = {
      addProductController,
      getSingleProductController,
      editProductController,
-     deleteProductController
+     deleteProductController,
+     filterProducts,
+     searchProducts,
+     getUserByIdController
 }

@@ -7,8 +7,8 @@ const productSchema = new mongoose.Schema({
      name: { type: String, required: true, maxlength: 50 }, // Product name
      picture: { type: String, default: 'https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png' }, // URL to product picture
      description: { type: String, required: true }, // Product description
-     gender: { type: String, enum: ['male', 'female'] }, // Gender options
-     category: { type: String, enum: ['makeup', 'skincare', 'haircare'], required: true }, // Category options
+     gender: { type: String, enum: ['Male', 'Female'] }, // Gender options
+     category: { type: String, enum: ['Makeup', 'Skincare', 'Haircare'], required: true }, // Category options
      price: { type: Number, required: true }, // Product price
 }, {
      timestamps: true

@@ -1,6 +1,6 @@
 const { express } = require('../imports/modules.imports');
 const { authorize } = require('../imports/middleware.import')
-const { getProductController, addProductController, getSingleProductController, editProductController, deleteProductController } = require('../imports/controller.imports')
+const { getProductController, addProductController, getSingleProductController, editProductController, deleteProductController, searchProducts, filterProducts } = require('../imports/controller.imports')
 
 
 // Creating Product Router
@@ -14,6 +14,8 @@ productRoutes.route('/:id')
      .get(getSingleProductController)
      .put(authorize, editProductController)
      .delete(authorize, deleteProductController)
+
+
 
 
 

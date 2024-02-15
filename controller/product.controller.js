@@ -3,13 +3,17 @@ const { asyncHandler, uuidv4 } = require('../imports/modules.imports')
 
 const getProductController = asyncHandler(async (req, res) => {
      try {
-          const products = await ProductModel.find();
-          res.status(200).send(products)
+          const { page = 1, limit = 10 } = req.query;
+          const skip = (page - 1) * limit;
+
+          const products = await ProductModel.find().skip(skip).limit(parseInt(limit));
+          res.status(200).send(products);
      } catch (error) {
           console.log(error);
-          res.status(400).send({ message: "Internal server error." })
+          res.status(500).send({ message: "Internal server error." });
      }
 });
+
 const getSingleProductController = asyncHandler(async (req, res) => {
      try {
           const id = req.params.id
@@ -39,7 +43,9 @@ const editProductController = asyncHandler(async (req, res) => {
      try {
           const { id } = req.params;
           const { name, picture, description, gender, category, price } = req.body;
-          let product = await ProductModel.findOne({ id });
+          let product = await ProductModel.findById({ _id: id });
+
+          console.log(product)
 
           if (!product) {
                return res.status(404).send({ message: 'Product not found' })
@@ -66,13 +72,33 @@ const deleteProductController = asyncHandler(async (req, res) => {
 
           await ProductModel.findByIdAndDelete({ _id: id })
 
-          res.status(201).send({ message: "Product updated successfully" })
+          res.status(201).send({ message: "Product deleted successfully" })
 
      } catch (error) {
           console.log(error);
           res.status(400).send({ message: "Internal server error." })
      }
 })
+// Filter controller
+const filterProducts = asyncHandler(async (req, res) => {
+     const { category, gender } = req.query;
+     console.log(category, gender)
+     try {
+
+
+
+
+     } catch (error) {
+          console.error('Error in filterProducts:', error);
+          res.status(500).json({ success: false, error: 'Internal Server Error' });
+     }
+});
+
+// Search controller
+const searchProducts = asyncHandler(async (req, res) => {
+
+});
+
 
 
 
@@ -81,5 +107,8 @@ module.exports = {
      addProductController,
      getSingleProductController,
      editProductController,
-     deleteProductController
+     deleteProductController,
+     searchProducts,
+     filterProducts,
+     
 }

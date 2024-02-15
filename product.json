@@ -1,0 +1,182 @@
+[
+  {
+    "id": "1",
+    "name": "Hydrating Face Cream",
+    "picture": "https://i.pinimg.com/564x/9a/6a/65/9a6a653f36dd9d1fc668c092a11b5abf.jpg",
+    "description": "A deeply hydrating face cream for dry skin. ",
+    "gender": "Female",
+    "category": "Skincare",
+    "price": 29.99
+  },
+  {
+    "id": "2",
+    "name": "Moisturizing Shampoo",
+    "picture": "https://i.pinimg.com/564x/f4/12/a6/f412a686ecb3bc2bf4ae4a3fc38cda08.jpg",
+    "description": "A nourishing shampoo that leaves your hair soft and shiny. ",
+    "gender": "Male",
+    "category": "Haircare",
+    "price": 15.99
+  },
+  {
+    "id": "3",
+    "name": "Matte Lipstick",
+    "picture": "https://i.pinimg.com/564x/eb/26/d4/eb26d449929f1aff804f9f28ddfa86cd.jpg",
+    "description": "Get a bold and beautiful look with our matte lipstick.",
+    "gender": "Female",
+    "category": "Makeup",
+    "price": 12.99
+  },
+  {
+    "id": "4",
+    "name": "Gentle Cleanser",
+    "picture": "https://i.pinimg.com/564x/e4/b2/dc/e4b2dc42d8754b5301fb13577da35750.jpg",
+    "description": "A gentle facial cleanser that removes. ",
+    "gender": "Male",
+    "category": "Skincare",
+    "price": 19.99
+  },
+  {
+    "id": "5",
+    "name": "Volumizing Hair Spray",
+    "picture": "https://i.pinimg.com/564x/79/cf/43/79cf4359490f663a542f5a921e8aee96.jpg",
+    "description": "Achieve volume and hold with our volumizing hair spray. ",
+    "gender": "Female",
+    "category": "Haircare",
+    "price": 9.99
+  },
+  {
+    "id": "6",
+    "name": "Eyeshadow Palette",
+    "picture": "https://i.pinimg.com/564x/d3/a0/d7/d3a0d78b06586b531beccd9270bff917.jpg",
+    "description": "Create mesmerizing eye looks with our versatile eyeshadow palette. ",
+    "gender": "Female",
+    "category": "Makeup",
+    "price": 24.99
+  },
+  {
+    "id": "7",
+    "name": "Moisturizing Body Lotion",
+    "picture": "https://i.pinimg.com/736x/bf/d8/99/bfd8994c9bf818795e71cf8f6e8f5851.jpg",
+    "description": "Keep your skin hydrated and smooth with our moisturizing body lotion.",
+    "gender": "Male",
+    "category": "Skincare",
+    "price": 17.99
+  },
+  {
+    "id": "8",
+    "name": "Curl Enhancing Gel",
+    "picture": "https://i.pinimg.com/736x/98/e6/39/98e639c1383f582e350e3ae9f9498e94.jpg",
+    "description": "Define and enhance your natural curls with our curl enhancing gel.",
+    "gender": "Female",
+    "category": "Haircare",
+    "price": 13.99
+  },
+  {
+    "id": "9",
+    "name": "Liquid Foundation",
+    "picture": "https://i.pinimg.com/564x/f4/60/f4/f460f4b25ee67069b7ce4520dd0db596.jpg",
+    "description": "Achieve a flawless complexion with our liquid foundation.",
+    "gender": "Female",
+    "category": "Makeup",
+    "price": 18.99
+  },
+  {
+    "id": "10",
+    "name": "Beard Oil",
+    "picture": "https://i.pinimg.com/736x/be/ba/25/beba2554643c1cb212ada4cbdaee5219.jpg",
+    "description": "Nourish and soften your beard with our specially formulated beard oil.",
+    "gender": "Male",
+    "category": "Skincare",
+    "price": 14.99
+  },
+  {
+    "id": "11",
+    "name": "Anti-Aging Serum",
+    "picture": "https://i.pinimg.com/736x/ab/23/7d/ab237d58b07e7a8933eb01b279d3ac3c.jpg",
+    "description": "Combat signs of aging with our potent anti-aging serum.",
+    "gender": "Female",
+    "category": "Skincare",
+    "price": 31.99
+  },
+  {
+    "id": "12",
+    "name": "Dry Shampoo",
+    "picture": "https://i.pinimg.com/564x/38/47/b1/3847b1f23abb49301320e85619f2920b.jpg",
+    "description": "Refresh your hair between washes with our convenient dry shampoo. ",
+    "gender": "Male",
+    "category": "Haircare",
+    "price": 11.99
+  },
+  {
+    "id": "13",
+    "name": "Lip Balm",
+    "picture": "https://i.pinimg.com/564x/f4/21/d0/f421d0109e183a49b317a944cb60f8bb.jpg",
+    "description": "Keep your lips hydrated and smooth with our nourishing lip balm.",
+    "gender": "Female",
+    "category": "Makeup",
+    "price": 7.99
+  },
+  {
+    "id": "14",
+    "name": "Sunscreen Lotion",
+    "picture": "https://i.pinimg.com/564x/1f/15/3c/1f153cc09d6d02c72031655151b4af4c.jpg",
+    "description": "Protect your skin from harmful broad-spectrum sunscreen lotion. ",
+    "gender": "Female",
+    "category": "Skincare",
+    "price": 22.99
+  },
+  {
+    "id": "15",
+    "name": "Texturizing Hair Wax",
+    "picture": "https://i.pinimg.com/564x/38/37/1f/38371f3fc12a6fa92801c1725567c377.jpg",
+    "description": "Achieve textured hairstyles with our versatile hair wax. ",
+    "gender": "Male",
+    "category": "Haircare",
+    "price": 16.99
+  },
+  {
+    "id": "16",
+    "name": "Mascara",
+    "picture": "https://i.pinimg.com/564x/e9/a6/69/e9a66967f305d8f19229f6823c106102.jpg",
+    "description": "Enhance your lashes with our volumizing mascara.",
+    "gender": "Female",
+    "category": "Makeup",
+    "price": 10.99
+  },
+  {
+    "id": "17",
+    "name": "Aloe Vera Gel",
+    "picture": "https://i.pinimg.com/736x/6f/26/21/6f2621fd15d6c1642d2af104af29a137.jpg",
+    "description": "Soothe and hydrate your skin with our pure aloe vera gel. ",
+    "gender": "Male",
+    "category": "Skincare",
+    "price": 8.99
+  },
+  {
+    "id": "18",
+    "name": "Heat Protectant Spray",
+    "picture": "https://i.pinimg.com/564x/68/3f/e9/683fe9d0816a1b0c03eff002cb20c02d.jpg",
+    "description": "Shield your hair from heat damage with our heat protectant spray.",
+    "gender": "Female",
+    "category": "Haircare",
+    "price": 20.99
+  },
+  {
+    "id": "19",
+    "name": "Eyeliner Pencil",
+    "picture": "https://i.pinimg.com/564x/c0/82/54/c08254bf6cb5830cdf3cb5c75f44a871.jpg",
+    "description": "Define your eyes with our long-lasting eyeliner pencil.",
+    "gender": "Female",
+    "category": "Makeup",
+    "price": 9.99
+  },
+  {
+    "id": "20",
+    "name": "Charcoal Face Mask",
+    "picture": "https://i.pinimg.com/736x/3d/7e/c9/3d7ec94e2e7156137a7c4b398f9c74f7.jpg",
+    "description": "Detoxify and purify your skin with our charcoal face mask.",
+    "gender": "Male",
+    "category": "Skincare",
+    "price": 25.99
+  }
+]

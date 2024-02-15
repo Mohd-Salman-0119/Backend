@@ -11,9 +11,6 @@ const registerController = asyncHandler(async (req, res) => {
                return res.status(400).json({ msg: "Please enter all the feilds" })
           }
 
-          if (!req.file) {
-               return res.status(400).json({ msg: "Please provide an avatar image" });
-          }
 
           const existUser = await UserModel.findOne({ email })
 
@@ -59,9 +56,26 @@ const loginController = asyncHandler(async (req, res) => {
      }
 })
 
+const getUserByIdController = asyncHandler(async (req, res) => {
+     try {
+          const userID = req.userID
+          const user = await UserModel.findById(userID);
+
+          if (!user) {
+               return res.status(404).json({ success: false, message: 'User not found' });
+          }
+
+          res.status(200).json({ success: true, data: user });
+     } catch (error) {
+          console.error('Error in getUserByIdController:', error);
+          res.status(500).json({ success: false, error: 'Internal Server Error' });
+     }
+});
+
 
 
 module.exports = {
      registerController,
-     loginController
+     loginController,
+     getUserByIdController
 }
